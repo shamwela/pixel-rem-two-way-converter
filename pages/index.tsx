@@ -26,9 +26,7 @@ const Home = () => {
       </Head>
 
       <main className='min-h-screen grid place-items-center'>
-        <section className='max-w-3xl p-4 flex flex-col gap-y-4'>
-          <h1>Pixel-rem Two-way Converter</h1>
-
+        <section className='max-w-3xl p-4 flex flex-col gap-y-4'>         
           <section className='flex flex-col gap-y-1'>
             <label htmlFor='pixel' className='ml-5'>
               Pixel
