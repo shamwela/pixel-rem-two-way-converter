@@ -18,39 +18,42 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Pixel-rem Two-Way Converter</title>
+        <title>Pixel-rem Two-way Converter</title>
         <meta
           name='description'
           content='Convert from pixel to rem or rem to pixel.'
         />
       </Head>
 
-      <main className='max-w-3xl min-h-screen m-auto p-4 flex flex-col gap-y-4'>
-        <h1>Pixel-rem Two-Way Converter</h1>
-
-        <section className='flex flex-col gap-y-1'>
-          <label htmlFor='pixel'>Pixel</label>
-          <input
-            value={pixel}
-            onChange={(event) => handlePixel(event.currentTarget.value)}
-            id='pixel'
-            type='number'
-            min='0'
-          />
+      <main className='min-h-screen grid place-items-center'>
+        <section className='max-w-3xl p-4 flex flex-col gap-y-4'>
+          <h1>Pixel-rem Two-way Converter</h1>
+          <section className='flex flex-col gap-y-1'>
+            <label htmlFor='pixel' className='ml-5'>
+              Pixel
+            </label>
+            <input
+              value={pixel}
+              onChange={(event) => handlePixel(event.currentTarget.value)}
+              id='pixel'
+              type='number'
+              min='0'
+            />
+          </section>
+          <section className='flex flex-col gap-y-1'>
+            <label htmlFor='rem' className='ml-5'>
+              rem
+            </label>
+            <input
+              value={rem}
+              onChange={(event) => handleRem(event.currentTarget.value)}
+              id='rem'
+              type='number'
+              min='0'
+            />
+          </section>
+          <p>This is calculated based on a root font size of 16 pixels.</p>
         </section>
-
-        <section className='flex flex-col gap-y-1'>
-          <label htmlFor='rem'>rem</label>
-          <input
-            value={rem}
-            onChange={(event) => handleRem(event.currentTarget.value)}
-            id='rem'
-            type='number'
-            min='0'
-          />
-        </section>
-
-        <p>This is calculated based on a root font size of 16 pixels.</p>
       </main>
     </>
   )
