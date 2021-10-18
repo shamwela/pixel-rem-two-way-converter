@@ -25,8 +25,8 @@ const Home = () => {
         />
       </Head>
 
-      <main className='min-h-screen grid place-items-center'>
-        <section className='max-w-3xl p-4 flex flex-col gap-y-4'>         
+      <main className='min-h-screen flex'>
+        <div className='w-full max-w-3xl m-auto p-4 flex flex-col gap-y-4'>
           <section className='flex flex-col gap-y-1'>
             <label htmlFor='pixel' className='ml-5'>
               Pixel
@@ -57,7 +57,7 @@ const Home = () => {
             This is calculated using 16px because most browsers' default font
             size is 16px.
           </p>
-        </section>
+        </div>
       </main>
     </>
   )
