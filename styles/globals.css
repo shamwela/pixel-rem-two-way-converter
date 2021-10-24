@@ -27,7 +27,7 @@ input {
 }
 
 input {
-  @apply rounded-full px-5 py-3 focus:outline-none focus:ring-1 ring-accent;
+  @apply px-5 py-3 rounded-full focus:outline-none focus:ring-1 ring-accent;
   background-color: #333;
 }
 
